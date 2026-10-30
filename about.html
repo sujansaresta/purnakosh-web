@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Purnakosh: NEPSE tracker, expenses and income tax for Nepal</title>
+<meta name="description" content="Track NEPSE shares from Meroshare, expenses, Nepal income tax (SSF, CIT, TDS) and vehicle tax in BS or AD. Free and private: data stays in your own Google Drive." />
+<link rel="canonical" href="https://purnakosh.nepali-tech.workers.dev/about.html" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Purnakosh" />
+<meta property="og:title" content="Purnakosh: NEPSE tracker, expenses and income tax for Nepal" />
+<meta property="og:description" content="Track NEPSE shares from Meroshare, expenses, Nepal income tax (SSF, CIT, TDS) and vehicle tax in BS or AD. Free and private: data stays in your own Google Drive." />
+<meta property="og:url" content="https://purnakosh.nepali-tech.workers.dev/about.html" />
+<meta property="og:image" content="https://purnakosh.nepali-tech.workers.dev/social-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Purnakosh: NEPSE tracker, expenses and income tax for Nepal" />
+<meta name="twitter:description" content="Track NEPSE shares from Meroshare, expenses, Nepal income tax (SSF, CIT, TDS) and vehicle tax in BS or AD. Free and private: data stays in your own Google Drive." />
+<meta name="twitter:image" content="https://purnakosh.nepali-tech.workers.dev/social-card.png" />
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Purnakosh", "alternateName": ["पूर्णकोष", "Koshvero"], "description": "Track NEPSE shares from Meroshare, expenses, Nepal income tax (SSF, CIT, TDS) and vehicle tax in BS or AD. Free and private: data stays in your own Google Drive.", "url": "https://purnakosh.nepali-tech.workers.dev/about.html", "image": "https://purnakosh.nepali-tech.workers.dev/social-card.png", "applicationCategory": "FinanceApplication", "featureList": ["NEPSE portfolio tracker", "Meroshare import and WACC", "Share sell calculator with capital gains tax", "Nepal income tax calculator (SSF, CIT, TDS)", "BS to AD date converter", "Vehicle tax and bluebook reminders", "Expense tracker in NPR", "Gold and silver rate in Nepal"], "operatingSystem": "Android, Web", "downloadUrl": "https://github.com/shrestha-tech/koshvero-releases/releases/latest", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "NPR"}, "author": {"@type": "Person", "name": "Sujan Shrestha"}, "inLanguage": "en"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Purnakosh free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Purnakosh is free to use, with no ads. It sends only an anonymous usage count (no personal or financial data), which you can switch off in Settings."}}, {"@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": {"@type": "Answer", "text": "On your phone or browser, and in one file Purnakosh creates in your own Google Drive. Purnakosh can't see your other Drive files, and the developer never sees your data."}}, {"@type": "Question", "name": "Can I import my shares from Meroshare?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Export your Transaction History and WACC CSV files from Meroshare and import them; Purnakosh works out your holdings, average cost and profit or loss."}}, {"@type": "Question", "name": "Does it calculate capital gains tax when I sell shares?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The sell calculator includes broker commission, SEBON and DP fees, and capital gains tax by how long you held the shares."}}, {"@type": "Question", "name": "Can it estimate my income tax in Nepal?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Enter your salary and allowances, choose SSF, PF or CIT, add insurance and donations, and Purnakosh estimates your yearly tax and monthly TDS under Nepal's tax slabs."}}, {"@type": "Question", "name": "Does Purnakosh work with Nepali (BS) dates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Show dates in BS, AD or both, in Nepali script if you like, and convert between BS and AD with the built-in date converter."}}, {"@type": "Question", "name": "Is there an Android app?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Download the APK from the Purnakosh releases page, or use the web app in any browser."}}]}]</script>
+<link rel="icon" href="icons/icon-192.png" />
+<style>
+  :root { --bg:#f5f4f0; --card:#fff; --text:#18191b; --muted:#66655f; --border:#e3e1da; --accent:#2a4a7f; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121314; --card:#1b1c1e; --text:#eceae6; --muted:#a09e98; --border:#2c2d30; --accent:#9db9e8; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+  header img { width: 56px; height: 56px; border-radius: 13px; }
+  header b { display: block; font-size: 22px; }
+  header span { color: var(--muted); font-size: 14px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 8px 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); overflow-wrap: anywhere; } /* a long address must wrap, not scroll sideways (WCAG 1.4.10) */
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  .button { display: inline-block; background: #22406f; color: #fff; text-decoration: none; padding: 12px 20px; border-radius: 12px; font-weight: 600; margin: 8px 8px 0 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  footer a { margin-right: 16px; display: inline-block; padding: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icons/icon-192.png" alt="" /><div><b>Purnakosh</b><span>Your Money. Your Assets. Your Complete Picture.</span></div></header>
+
+<h1>NEPSE portfolio tracker, expense tracker and income tax calculator for Nepal</h1>
+<p class="muted" style="margin-top:0">Purnakosh (पूर्णकोष, "complete treasury"): Your Money. Your Assets. Your Complete Picture.</p>
+<p>Purnakosh is a personal finance app for households in Nepal. It brings your shares, money, taxes and vehicles together in one place, and keeps your data in your own Google Drive, not on our servers.</p>
+<a class="button" href="./">Open the web app</a>
+<div class="card">
+<h2 style="margin-top:0">What it does</h2>
+<ul>
+<li><b>Shares (NEPSE):</b> holdings and average cost, profit and loss, dividends, IPOs and right shares, capital gains tax when you sell, imported from Meroshare files.</li>
+<li><b>Money:</b> income, spending and transfers by category and account, monthly trends, and how much you invest.</li>
+<li><b>Income tax:</b> an estimate for your salary under Nepal's rules, with SSF, PF, CIT, insurance and monthly TDS.</li>
+<li><b>Vehicles:</b> yearly vehicle tax and fines by province, renewal and insurance reminders, with bluebook scanning on the phone.</li>
+<li><b>Household:</b> a portfolio for each family member, grouped to see the household added up.</li>
+<li><b>Dates:</b> BS and AD side by side, and a date converter.</li>
+</ul>
+</div>
+<h2>Your data stays yours</h2>
+<p>When you sign in with Google, Purnakosh keeps your data on your device and in a single file it creates in your own Google Drive. It can't see any of your other Drive files. There are no ads, the app only counts anonymous usage (which you can switch off in Settings), and your data is never sold or shared beyond the services named in the privacy policy. Read the <a href="privacy.html">privacy policy</a> for the details.</p>
+<h2>Questions</h2>
+<h3 style="font-size:16px;margin:20px 0 4px">Is Purnakosh free?</h3>
+<p style="margin:0">Yes. Purnakosh is free to use, with no ads. It sends only an anonymous usage count (no personal or financial data), which you can switch off in Settings.</p>
+<h3 style="font-size:16px;margin:20px 0 4px">Where is my data stored?</h3>
+<p style="margin:0">On your phone or browser, and in one file Purnakosh creates in your own Google Drive. Purnakosh can't see your other Drive files, and the developer never sees your data.</p>
+<h3 style="font-size:16px;margin:20px 0 4px">Can I import my shares from Meroshare?</h3>
+<p style="margin:0">Yes. Export your Transaction History and WACC CSV files from Meroshare and import them; Purnakosh works out your holdings, average cost and profit or loss.</p>
+<h3 style="font-size:16px;margin:20px 0 4px">Does it calculate capital gains tax when I sell shares?</h3>
+<p style="margin:0">Yes. The sell calculator includes broker commission, SEBON and DP fees, and capital gains tax by how long you held the shares.</p>
+<h3 style="font-size:16px;margin:20px 0 4px">Can it estimate my income tax in Nepal?</h3>
+<p style="margin:0">Yes. Enter your salary and allowances, choose SSF, PF or CIT, add insurance and donations, and Purnakosh estimates your yearly tax and monthly TDS under Nepal's tax slabs.</p>
+<h3 style="font-size:16px;margin:20px 0 4px">Does Purnakosh work with Nepali (BS) dates?</h3>
+<p style="margin:0">Yes. Show dates in BS, AD or both, in Nepali script if you like, and convert between BS and AD with the built-in date converter.</p>
+<h3 style="font-size:16px;margin:20px 0 4px">Is there an Android app?</h3>
+<p style="margin:0">Yes. Download the APK from the Purnakosh releases page, or use the web app in any browser.</p>
+<h2>Get the app</h2>
+<a class="button" href="https://github.com/shrestha-tech/koshvero-releases/releases/latest">Download for Android</a>
+<p>Download the latest APK, open it on your phone and tap Install. Android asks once to allow installs from your browser or file manager; on Samsung phones, turn off Auto Blocker first (Settings → Security and privacy → Auto Blocker). After that, most updates arrive inside the app. Or use the <a href="./">web app</a> in any browser.</p>
+
+<h2>Guides</h2>
+<p><a href="nepse-portfolio-tracker.html">NEPSE portfolio tracker</a> · <a href="share-capital-gains-tax-calculator-nepal.html">Share sell calculator</a> · <a href="nepal-income-tax-calculator.html">Nepal income tax calculator</a> · <a href="bs-ad-date-converter.html">BS to AD date converter</a> · <a href="nepal-vehicle-tax-calculator.html">Vehicle tax</a> · <a href="nepal-expense-tracker.html">Expense tracker</a> · <a href="gold-silver-rate-nepal.html">Gold and silver rate</a></p>
+
+<footer><a href="about.html">About</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="./">Open the web app</a><br />Contact: Sujan Shrestha, <a href="mailto:sujan.saresta@gmail.com">sujan.saresta@gmail.com</a></footer>
+</main>
+</body>
+</html>

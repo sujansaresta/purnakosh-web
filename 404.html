@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Purnakosh</title>
+    <meta name="description" content="Purnakosh web app: track NEPSE shares, expenses, Nepal income tax and vehicle tax in your browser. Free and private: data stays in your own Google Drive." />
+    <link rel="canonical" href="https://purnakosh.nepali-tech.workers.dev/" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Purnakosh: NEPSE tracker, expenses and income tax for Nepal" />
+    <meta property="og:description" content="Your Money. Your Assets. Your Complete Picture. Free, with your data in your own Google Drive." />
+    <meta property="og:image" content="https://purnakosh.nepali-tech.workers.dev/social-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#22406f" />
+    <!-- Only this site's own code and Google sign-in run here; data goes only to Google's APIs and the market feed. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com; font-src 'self' data:; connect-src 'self' https://www.googleapis.com https://sheets.googleapis.com https://script.google.com https://script.googleusercontent.com; base-uri 'self'; form-action 'none'; object-src 'none'" />
+    <link rel="manifest" href="/purnakosh-web/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/purnakosh-web/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Purnakosh" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <style id="expo-reset">
+      html, body { height: 100%; }
+      body { overflow: hidden; background: #f5f4f0; }
+      @media (prefers-color-scheme: dark) { body { background: #121314; } }
+      #root { display: flex; height: 100%; flex: 1; } /* wide screens: side rail and centred columns (src/layout.ts) */
+      /* Shown while the app downloads; React replaces it on its first render. */
+      .boot { margin: auto; display: flex; flex-direction: column; align-items: center; gap: 14px; font: 15px -apple-system, system-ui, sans-serif; color: #66655f; }
+      .boot i { position: relative; width: 88px; height: 88px; border-radius: 20px; overflow: hidden; }
+      .boot img { width: 88px; height: 88px; display: block; }
+      .boot i::after { content: ""; position: absolute; top: -20%; left: -60%; width: 45%; height: 140%; transform: rotate(20deg);
+        background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0)); animation: boot 1.8s ease-in-out infinite; }
+      .boot b { font-size: 22px; color: #18191b; }
+      @keyframes boot { 0% { left: -60%; } 60%, 100% { left: 130%; } }
+      @media (prefers-reduced-motion: reduce) { .boot i::after { animation: none; display: none; } }
+      @media (prefers-color-scheme: dark) { .boot { color: #a09e98; } .boot b { color: #eceae6; } }
+    </style>
+  <meta name="theme-color" content="#22406f">
+<link rel="icon" href="/purnakosh-web/favicon.ico"/></head>
+  <body>
+    <noscript>You need to enable JavaScript to run Purnakosh. Purnakosh is a free NEPSE portfolio tracker, expense tracker and Nepal income tax calculator.
+      <a href="about.html">About</a> · <a href="nepse-portfolio-tracker.html">NEPSE portfolio tracker</a> · <a href="share-capital-gains-tax-calculator-nepal.html">Share sell calculator</a> ·
+      <a href="nepal-income-tax-calculator.html">Income tax calculator</a> · <a href="bs-ad-date-converter.html">BS to AD converter</a> ·
+      <a href="nepal-vehicle-tax-calculator.html">Vehicle tax</a> · <a href="nepal-expense-tracker.html">Expense tracker</a> · <a href="gold-silver-rate-nepal.html">Gold and silver rate</a></noscript>
+    <div id="root"><div class="boot" role="progressbar" aria-label="Loading Purnakosh"><i><img src="/purnakosh-web/icons/icon-192.png" alt="" /></i><b>Purnakosh</b>Your Money. Your Assets. Your Complete Picture.</div></div>
+    <script src="/purnakosh-web/register-sw.js" defer></script>
+  <script src="/purnakosh-web/_expo/static/js/web/entry-7ce122c7c7d188383454a5610597f7f9.js" defer></script>
+</body>
+</html>
