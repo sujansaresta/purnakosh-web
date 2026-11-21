@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://purnakosh.nepali-tech.workers.dev/sitemap.xml
